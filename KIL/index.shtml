@@ -1,0 +1,13 @@
+
+kil.t0.nu - shtml
+<hr>
+
+
+
+This is included: 
+<tt><!--#include virtual="included.txt" --></tt>
+
+
+<hr>
+date: <!--#echo var="DATE_LOCAL" --> 
+ 

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>KIL Custom Element / SSI.</title>
+</head>
+<body>
+	kil.t0.nu - .html
+	<hr>
+	This is included:
+	<tt>
+		<!--#include virtual="included.txt" -->
+	</tt>
+	<hr>
+	date:
+	<!--#echo var="DATE_LOCAL" -->
+	<hr>
+<script>
+class KilKnapp extends HTMLElement {
+	  constructor() {
+	    super();
+	    //this.render();
+	  }
+	  connectedCallback() {
+		this.render();
+	  }
+	  render() {
+		this.innerHTML = '<button type="button">KIL all the way</button>';
+	  }
+	}
+	window.customElements.define('kil-knapp', KilKnapp);
+</script>
+
+	KIL Knapp 2:
+
+	<kil-knapp>222</kil-knapp>
+	<kil-knapp>333</kil-knapp>
+
+</body>
+</html>
+
+
+
