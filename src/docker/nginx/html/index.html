@@ -1,15 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>KIL-SSI</title>
+</head>
+<body>
 
-Welcome to KIL-SSI-nginx
-<hr>
+	<h1>Welcome to KIL-SSI. Nginx is serving you.</h1>
+	<hr>
 
-date:
-<!--#echo var="DATE_LOCAL" -->
+	SSI date:
+	<code><!--#echo var="DATE_LOCAL" --></code>
 
-<hr>
+	<hr>
 
-This is included:
-<tt>
-	<!--#include virtual="included.txt" -->
-</tt>
+	SSI local inclusion:
+	<code>
+		<!--#include virtual="included.txt" -->
+	</code>
 
-	
+
+	<hr>
+	Proxy-connecting to the
+	<a href="/ex/">Node/Express stuff</a>.
+	<hr>
+
+	SSI-incuding the proxied Express content here:
+	<div>
+		<code>
+			<!--#include virtual="/ex/" -->
+		</code>
+	</div>
+
+</body>
+</html>
+

@@ -9,7 +9,7 @@ services:
     depends_on: 
      - express
     ports:
-     - "8080:80"
+     - "7654:80"
     networks: 
      - net1
 
@@ -17,7 +17,7 @@ services:
     build: src/docker/express
     container_name: kil-express
     ports:
-     - "7070:8080"
+     - "7655:8080"
     networks: 
      - net1
           
