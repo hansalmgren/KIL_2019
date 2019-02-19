@@ -2,7 +2,9 @@
 
 1. git clone https://github.com/hansalmgren/KIL_2019
 
-2. run.sh
+2. cd KIL_2019
+
+3. sh run.sh
 
 
 This starts a Docker networks with an SSI-enabled Nginx server 
