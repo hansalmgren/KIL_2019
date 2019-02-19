@@ -1,5 +1,10 @@
 # KIL_2019
 
+Prerequisits:
+- git
+- Docker
+- Docker-compose
+
 1. git clone https://github.com/hansalmgren/KIL_2019
 
 2. cd KIL_2019
