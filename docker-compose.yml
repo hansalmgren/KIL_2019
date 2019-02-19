@@ -4,9 +4,13 @@ version: '3.4'
 services:
   nginx:
     build: src/docker/nginx
-    #image: kil-ssi-nginx
     container_name: kil-ssi-nginx
     ports:
      - "8080:80"
+  express:
+    build: src/docker/express
+    container_name: kil-express
+    ports:
+     - "7070:8080"
      
      
