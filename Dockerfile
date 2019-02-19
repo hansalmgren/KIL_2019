@@ -1,7 +1,8 @@
 
-FROM Ubuntu
+FROM ubuntu
 MAINTAINER Skatteverket
 
-RUN apt install nginx
+RUN apt-get -y update
+RUN apt-get -y install nginx
 
 

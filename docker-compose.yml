@@ -1,11 +1,11 @@
+
 version: '3.4'
 
 services:
-  uu:
-    #image: kil-nginx-ssi
-    #container_name: kil-nginx-ssi
+  kil-ssi-nginx:
     build: .
+    container_name: kil-ssi-nginx
     ports:
-     - "8080:8080"
-    
-    
+     - "5000:5000"
+     
+     
