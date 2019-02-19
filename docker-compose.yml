@@ -2,10 +2,11 @@
 version: '3.4'
 
 services:
-  kil-ssi-nginx:
-    build: .
+  nginx:
+    build: src/docker/nginx
+    #image: kil-ssi-nginx
     container_name: kil-ssi-nginx
     ports:
-     - "5000:5000"
+     - "8080:80"
      
      
