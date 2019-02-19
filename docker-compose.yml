@@ -2,15 +2,25 @@
 version: '3.4'
 
 services:
+
   nginx:
     build: src/docker/nginx
     container_name: kil-ssi-nginx
+    depends_on: 
+     - express
     ports:
      - "8080:80"
+    networks: 
+     - net1
+
   express:
     build: src/docker/express
     container_name: kil-express
     ports:
      - "7070:8080"
-     
-     
+    networks: 
+     - net1
+          
+networks:
+  net1:
+    
