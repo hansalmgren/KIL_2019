@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Apache</title>
+<title>Apache KIL</title>
 </head>
 <body>
 	This is Apache
@@ -12,6 +12,20 @@
 	<hr>
 	HTTP_USER_AGENT:
 	<!--#echo var="HTTP_USER_AGENT" -->
+	<hr>
+
+	<hr>
+	Proxy-connecting to the
+	<a href="/ex/">Node/Express stuff</a>.
+	<hr>
+
+	SSI-incuding the proxied Express content here:
+	<div>
+		<code>
+			<!--#include virtual="/ex/" -->
+		</code>
+	</div>
+
 
 </body>
 </html>
