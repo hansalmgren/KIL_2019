@@ -11,7 +11,8 @@ const app = express();
 app.get('/', (req, res) => {
 	let headers = req.headers;
 	let body = 'Hej det här är Node/Express som talar.<br>';
-    body += "<code>"+JSON.stringify(headers)+"</code>";
+    body += "All headers:<br><code>"+JSON.stringify(headers)+"</code>";
+    body += "<br><code>user-agent: '"+req.get('user-agent')+"'</code>";
     res.send(body);
 });
 
