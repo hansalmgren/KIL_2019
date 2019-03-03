@@ -3,6 +3,16 @@ version: '3.4'
 
 services:
 
+  apache:
+    build: src/docker/apache
+    container_name: apache-degrade
+    depends_on: 
+     - express
+    ports:
+     - "7653:80"
+    networks: 
+     - net1
+
   nginx:
     build: src/docker/nginx
     container_name: kil-ssi-nginx
