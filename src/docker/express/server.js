@@ -8,6 +8,13 @@ const HOST = '0.0.0.0';
 
 // App
 const app = express();
+
+app.set('views', './views');
+app.set('view engine', 'pug');
+app.get('/pug/', function (req, res) {
+	  res.render('index', { title: 'Hey', message: 'Hello there!' })
+	})
+
 app.get('/', (req, res) => {
 	let headers = req.headers;
 	let body = 'Hej det här är Node/Express som talar.<br>';
