@@ -26,6 +26,9 @@ services:
      - type: bind
        source: ./src/docker/nginx/html/
        target: /usr/share/nginx/html
+     - type: bind
+       source: ./src/docker/nginx/conf.d/
+       target: /etc/nginx/conf.d/
 
   express:
     build: src/docker/express
